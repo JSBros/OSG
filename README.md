@@ -20,13 +20,16 @@ The OCD Style Guide aims to remove these responsibilities from the developer and
 * [x] All import levels must be grouped according to their kind, separated by a blank line.
 * [x] All module-level imports must come first.
 * [x] All project-level imports must come next.
+* [x] There must be exactly `1` blank line between the import groups (not counting docs).
 * [x] All imports must be alphabetized in their own group.
+* [x] PascalCase imports must come before camelCase imports.
 * [x] Letters come before symbols (i.e. `import React...` comes before `import { Link }...`
+
 
 Example of import statements:
 ```jsx
-import emojione from 'emojione';
 import React, { PropTypes } from 'react';
+import emojione from 'emojione';
 import styled from 'styled-components';
 import toastr from 'toastr';
 import { bindActionCreators } from 'redux';
